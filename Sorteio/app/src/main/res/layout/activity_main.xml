@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="104dp"
+        android:text="Sorteio Mega-Sena"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSortear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:onClick="sortearMega"
+        android:text="Sortear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/txvNumero1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="15dp"
+        android:text="Numero 1: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSortear" />
+
+    <TextView
+        android:id="@+id/txvNumero2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Numero 2: "
+        app:layout_constraintStart_toStartOf="@+id/txvNumero1"
+        app:layout_constraintTop_toBottomOf="@+id/txvNumero1" />
+
+    <TextView
+        android:id="@+id/txvNumero3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="15dp"
+        android:text="Numero 3: "
+        app:layout_constraintStart_toStartOf="@+id/txvNumero2"
+        app:layout_constraintTop_toBottomOf="@+id/txvNumero2" />
+
+    <TextView
+        android:id="@+id/txvNumero4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="20dp"
+        android:text="Numero 4: "
+        app:layout_constraintStart_toStartOf="@+id/txvNumero3"
+        app:layout_constraintTop_toBottomOf="@+id/txvNumero3" />
+
+    <TextView
+        android:id="@+id/txvNumero5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:text="Numero 5: "
+        app:layout_constraintStart_toStartOf="@+id/txvNumero4"
+        app:layout_constraintTop_toBottomOf="@+id/txvNumero4" />
+
+    <TextView
+        android:id="@+id/txvNumero6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="16dp"
+        android:text="Numero 6:"
+        app:layout_constraintStart_toStartOf="@+id/txvNumero5"
+        app:layout_constraintTop_toBottomOf="@+id/txvNumero5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
